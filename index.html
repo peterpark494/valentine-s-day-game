@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Game</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --pink: #ff4f8b;
+        --bg: #fff4f8;
+        --text: #2a2a2a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, #ffe0ed 0%, var(--bg) 45%, #ffffff 100%);
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: var(--text);
+      }
+      .card {
+        width: min(92vw, 560px);
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(255, 79, 139, 0.15);
+        padding: 28px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: clamp(26px, 6vw, 40px);
+      }
+      p { line-height: 1.7; margin: 10px 0; }
+      .badge {
+        display: inline-block;
+        background: #ffe7f0;
+        border: 1px solid #ffd0e1;
+        color: #c22a63;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 13px;
+        margin-bottom: 12px;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 16px;
+        text-decoration: none;
+        background: var(--pink);
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+      .hint {
+        font-size: 13px;
+        color: #666;
+        margin-top: 16px;
+      }
+      .online {
+        margin-top: 12px;
+        font-size: 14px;
+      }
+      .online a {
+        color: #c22a63;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <span class="badge">已准备好部署到 Vercel</span>
+      <h1>💘 Valentine's Day Game</h1>
+      <p>你的项目现在是一个可直接托管的静态站点。</p>
+      <p>现在已经有可公开访问的网址了，下面可以直接打开分享。</p>
+      <p class="online">在线地址：<a href="https://valentine-s-day-game-9td8bjz5f-peterparks-projects-d1055745.vercel.app" target="_blank" rel="noreferrer">valentine-s-day-game-9td8bjz5f-peterparks-projects-d1055745.vercel.app</a></p>
+      <a class="cta" href="https://vercel.com/new" target="_blank" rel="noreferrer">前往 Vercel 创建部署</a>
+      <div class="hint">可在同目录继续添加你的游戏代码（HTML/CSS/JS 或前端框架）。</div>
+    </main>
+  </body>
+</html>
